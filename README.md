@@ -14,10 +14,10 @@ dependencies and this package by following the steps below, for Mac users:
 
  - `curl https://raw.githubusercontent.com/mhearne-usgs/comcatapps/master/mac_environment.yml -o environment.yml`
  - `conda env update -f=environment.yml`
- - `pip install git+git://github.com/usgs/earthquake-impact-utils.git`
- - `pip install git+git://github.com/usgs/libcomcat.git`
- - `pip install git+git://github.com/usgs/MapIO.git`
- - `pip install git+git://github.com/mhearne-usgs/comcatapps.git`
+ - `pip install --upgrade git+git://github.com/usgs/earthquake-impact-utils.git`
+ - `pip install --upgrade git+git://github.com/usgs/libcomcat.git`
+ - `pip install --upgrade git+git://github.com/usgs/MapIO.git`
+ - `pip install --upgrade git+git://github.com/mhearne-usgs/comcatapps.git`
 
 If this fails for any reason, you can try creating a new conda virtual environment by doing the following:
 
