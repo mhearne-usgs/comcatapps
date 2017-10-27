@@ -23,7 +23,7 @@ If this fails for any reason, you can try creating a new conda virtual environme
 
  - `git clone https://github.com/mhearne-usgs/comcatapps.git`
  - `cd comcatapps`
- - `install.sh`
+ - `bash install.sh`
  - `cd ..`
  - `pip install comcatapps`
 
@@ -33,7 +33,11 @@ found in this repository.
 The first program included in this package is called "shakestack.py", which allows a user to
 search for ShakeMaps in a given study area, and "stack" them on a grid defined by the study area
 boundaries and a resolution.  The output is stored in an HDF file, and can be retrieved and viewed as
-documented in the "shakestack" notebook in this repository.
+documented in the "shakestack"
+<a href="https://github.com/mhearne-usgs/comcatapps/blob/master/notebooks/shakestack.ipynb">notebook</a>
+in this repository.
+
+
 
 
 For help in using the tool, run:
