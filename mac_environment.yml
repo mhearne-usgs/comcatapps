@@ -1,0 +1,29 @@
+channels:
+- conda-forge
+- defaults
+- digitalglobe
+- ioos
+dependencies:
+- numpy
+- scipy
+- matplotlib
+- rasterio
+- pandas
+- shapely
+- h5py
+- gdal
+- pytest
+- pytest-cov
+- ipython
+- jupyter
+- cartopy
+- fiona
+- pycrypto
+- paramiko
+- obspy
+- xlrd
+- xlwt
+- openpyxl
+- xlsxwriter
+- beautifulsoup4
+
