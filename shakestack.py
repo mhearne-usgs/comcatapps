@@ -94,7 +94,12 @@ def main(args):
             print('%s: Attempting to fetch ShakeMap for %s (%i of %i)' % (tnow,event.id,ic,len(events)))
         ic += 1
         event_info[event.id] = event.toDict()
-        detail = event.getDetailEvent()
+        try:
+            detail = event.getDetailEvent()
+        except Exception as e:
+            fmt = 'Could not retrieve detail data for event %s, error "%s". Skipping.'
+            print(fmt % (event.id,str(e)))
+            continue
         if not detail.hasProduct('shakemap'):
             print('Event %s appears not to have a ShakeMap after all... skipping.' % detail.id)
         shakemap = detail.getProducts('shakemap')[0]
