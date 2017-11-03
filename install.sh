@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VENV=comcatapps
+VENV=apps
 PYVER=3.5
 
 unamestr=`uname`

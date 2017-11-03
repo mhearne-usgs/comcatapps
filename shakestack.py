@@ -6,6 +6,7 @@ import os.path
 import glob
 import argparse
 import tempfile
+from datetime import datetime
 
 #third party
 import numpy as np
@@ -88,8 +89,9 @@ def main(args):
     layer_count = {}
     ic = 0
     for event in events:
+        tnow = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         if ic % 10 == 0:
-            print('Attempting to fetch ShakeMap for %s (%i of %i)' % (event.id,ic,len(events)))
+            print('%s: Attempting to fetch ShakeMap for %s (%i of %i)' % (tnow,event.id,ic,len(events)))
         ic += 1
         event_info[event.id] = event.toDict()
         detail = event.getDetailEvent()
