@@ -1,8 +1,7 @@
+name: apps
 channels:
 - conda-forge
 - defaults
-- digitalglobe
-- ioos
 dependencies:
 - numpy
 - scipy
@@ -12,6 +11,7 @@ dependencies:
 - shapely
 - h5py
 - gdal
+- python>=3.5
 - pytest
 - pytest-cov
 - ipython
@@ -26,4 +26,6 @@ dependencies:
 - openpyxl
 - xlsxwriter
 - beautifulsoup4
-
+- impactutils
+- libcomcat
+- mapio
